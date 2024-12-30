@@ -15,6 +15,7 @@ class Student(db.Model):
     name = db.Column(db.String(50), nullable=False)
     age = db.Column(db.String(50), nullable=False)
     major = db.Column(db.Integer, nullable=False)
+    course = db.Column(db.String(50), nullable=False)
     
     def to_dict(self):
         return{
